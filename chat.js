@@ -95,12 +95,34 @@ async function initializeDialog() {
 document.addEventListener('DOMContentLoaded', async () => {
     chatForm.addEventListener('submit', handleSubmit);
     
+    // Cookie Banner
+    initCookieBanner();
+    
     // Загружаем системный промпт
     await loadSystemPrompt();
     
     // Инициализируем диалог
     await initializeDialog();
 });
+
+// Cookie Banner
+function initCookieBanner() {
+    const banner = document.getElementById('cookieBanner');
+    const acceptBtn = document.getElementById('cookieAcceptBtn');
+    if (!banner || !acceptBtn) return;
+    
+    if (localStorage.getItem('cookiesAccepted')) {
+        banner.style.display = 'none';
+    } else {
+        banner.style.display = 'flex';
+    }
+    
+    acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        banner.style.opacity = '0';
+        setTimeout(() => { banner.style.display = 'none'; }, 300);
+    });
+}
 
 // Обработка отправки формы
 async function handleSubmit(e) {

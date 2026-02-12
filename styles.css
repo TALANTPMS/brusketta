@@ -742,6 +742,68 @@ body {
     font-weight: bold;
 }
 
+/* Cookie Banner — Mobile First (до 768px: снизу по центру) */
+.cookie-banner {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: calc(100% - 20px);
+    max-width: 360px;
+    transition: opacity 0.3s ease;
+}
+
+.cookie-banner-content {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
+.cookie-text {
+    font-size: 11px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.cookie-link {
+    color: #D9712A;
+    text-decoration: underline;
+}
+
+.cookie-link:hover {
+    color: #b85e1f;
+}
+
+.cookie-accept-btn {
+    background-color: #F04B4B;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 32px;
+    font-size: 14px;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s, transform 0.1s;
+    flex-shrink: 0;
+}
+
+.cookie-accept-btn:hover {
+    background-color: #d93c3c;
+}
+
+.cookie-accept-btn:active {
+    transform: scale(0.97);
+}
+
 /* Footer */
 .footer {
     padding: 40px 0;
@@ -1166,6 +1228,27 @@ body {
     
 }
 
+    /* Cookie Banner — 768px: правый нижний угол, горизонтальный */
+    .cookie-banner {
+        left: auto;
+        right: 20px;
+        transform: none;
+        max-width: 520px;
+        bottom: 20px;
+    }
+
+    .cookie-banner-content {
+        flex-direction: row;
+        align-items: center;
+        padding: 18px 22px;
+        gap: 18px;
+    }
+
+    .cookie-text {
+        font-size: 12px;
+    }
+}
+
 /* Media Query: min-width 1024px */
 @media (min-width: 1024px) {
     .wrapper {
@@ -1433,6 +1516,27 @@ body {
 
     .footer-contact-value {
         font-size: 14px;
+    }
+}
+
+    /* Cookie Banner — 1024px */
+    .cookie-banner {
+        max-width: 600px;
+        bottom: 25px;
+        right: 25px;
+    }
+
+    .cookie-banner-content {
+        padding: 20px 24px;
+    }
+
+    .cookie-text {
+        font-size: 13px;
+    }
+
+    .cookie-accept-btn {
+        font-size: 15px;
+        padding: 14px 36px;
     }
 }
 
@@ -1709,5 +1813,25 @@ body {
         gap: 10px;
     }
 
+    /* Cookie Banner — 1400px */
+    .cookie-banner {
+        max-width: 680px;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .cookie-banner-content {
+        padding: 22px 28px;
+        border-radius: 18px;
+    }
+
+    .cookie-text {
+        font-size: 14px;
+    }
+
+    .cookie-accept-btn {
+        font-size: 16px;
+        padding: 14px 40px;
+    }
 }
 
