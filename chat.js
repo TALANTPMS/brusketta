@@ -237,21 +237,21 @@ function addUserMessage(text) {
 
 // Задержка для имитации печатания (зависит от длины текста)
 function getTypingDelay(text) {
-    if (!text) return 600;
+    if (!text) return 1100;
     const len = text.length;
-    // Минимум 500мс, ~15мс на символ, максимум 2000мс
-    return Math.min(Math.max(500, len * 15), 2000);
+    // Минимум 1000мс, ~15мс на символ, максимум 2500мс
+    return Math.min(Math.max(1000, len * 15), 2500);
 }
 
 // Задержки для разных типов элементов
 const DELAY = {
     TEXT: (text) => getTypingDelay(text),   // текстовый пузырёк
-    BUTTONS: 400,                           // кнопки выбора
-    MESSENGER: 400,                         // выбор мессенджера
-    INPUT_FORM: 300,                        // формы ввода
-    GALLERY: 500,                           // галерея
-    START_QUESTIONS: 500,                   // стартовые вопросы
-    ACCEPTED: 300,                          // плашка заявки
+    BUTTONS: 1500,                           // кнопки выбора
+    MESSENGER: 900,                         // выбор мессенджера
+    INPUT_FORM: 800,                        // формы ввода
+    GALLERY: 1000,                          // галерея
+    START_QUESTIONS: 1000,                  // стартовые вопросы
+    ACCEPTED: 800,                          // плашка заявки
 };
 
 function sleep(ms) {
