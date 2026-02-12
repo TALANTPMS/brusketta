@@ -507,97 +507,102 @@ body {
 /* Стартовые вопросы */
 .start-questions-container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px 0;
-    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    gap: 6px;
 }
 
 .start-question-btn {
-    padding: 12px 16px;
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
+    border: 1px solid #181C18;
+    color: #181C18;
+    font-family: "Montserrat-Regular", sans-serif;
+    background: none;
     cursor: pointer;
+    line-height: 120%;
+    outline: none;
     text-align: left;
-    transition: background-color 0.2s, border-color 0.2s;
-    font-family: inherit;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 10px 12px;
+    transition: all 0.6s;
+    word-break: break-word;
+    width: 90%;
 }
 
 .start-question-btn:hover {
-    background-color: #e0e0e0;
-    border-color: #007bff;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    background-color: #2C72C7;
+    border: 1px solid #2C72C7;
+    color: #ffffff;
 }
 
-.start-question-btn:active {
-    background-color: #d0d0d0;
-}
 
 /* Кнопки с опциями */
 .buttons-container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px 0;
-    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    gap: 6px;
+    
 }
 
 .option-button {
-    padding: 12px 16px;
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
+    background: none;
     cursor: pointer;
-    text-align: left;
-    transition: background-color 0.2s, border-color 0.2s;
+    line-height: 120%;
+    outline: none;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 11px;
+    padding: 8px 12px;
+    border: 1px solid #181C18;
+    color: #181C18;
+    transition: all 0.6s;
     font-family: inherit;
-    width: 100%;
+    width: 90%;
 }
 
 .option-button:hover {
-    background-color: #e0e0e0;
-    border-color: #007bff;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    background-color: #2C72C7;
+    border: 1px solid #2C72C7;
+    color: #ffffff;
 }
 
-.option-button:active {
-    background-color: #d0d0d0;
-}
+
 
 /* Кнопки выбора мессенджеров */
 .messengers-container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px 0;
-    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    gap: 6px;
 }
 
 .messenger-button {
-    padding: 12px 16px;
-    background-color: #f0f0f0;
-    color: #333;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    font-size: 14px;
+    border: 1px solid #181C18;
+    color: #181C18;
+    font-family: "Montserrat-Regular", sans-serif;
+    background: none;
     cursor: pointer;
-    text-align: left;
-    transition: background-color 0.2s, border-color 0.2s;
-    font-family: inherit;
-    width: 100%;
+    line-height: 120%;
+    outline: none;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 11px;
+    padding: 8px 12px;
+    transition: all 0.6s;
+    word-break: break-word;
+    width: 90%;
 }
 
 .messenger-button:hover {
-    background-color: #e0e0e0;
-    border-color: #007bff;
+    font-family: "Montserrat-SemiBold", sans-serif;
+    background-color: #2C72C7;
+    border: 1px solid #2C72C7;
+    color: #ffffff;
 }
 
-.messenger-button:active {
-    background-color: #d0d0d0;
-}
 
 /* Формы ввода */
 .input-form-container {
@@ -738,6 +743,21 @@ body {
         padding: 0 12px;
     }
 
+    .start-questions-container {
+        gap: 6px;
+        margin-top: 3px;
+    }
+
+    .messengers-container {
+        gap: 6px;
+        margin-top: 3px;
+    }
+
+    .buttons-container {
+        gap: 6px;
+        margin-top: 3px;
+    }
+
     .connection-link {
         display: flex;
     
@@ -862,18 +882,25 @@ body {
     }
 
     .start-question-btn {
-        font-size: 15px;
-        padding: 14px 18px;
+        border-radius: 12px;
+        padding: 11px 8px;
+        font-size: 13px;
     }
 
     .option-button {
-        font-size: 15px;
-        padding: 14px 18px;
+        border-radius: 12px;
+        padding: 10px 8px;
+        font-size: 12px;
+        min-width: 23.5%;
+        max-width: 31.9%;
     }
 
     .messenger-button {
-        font-size: 15px;
-        padding: 14px 18px;
+        border-radius: 12px;
+        padding: 10px 8px;
+        font-size: 12px;
+        min-width: 23.5%;
+        max-width: 31.9%;
     }
 
     .name-input,
@@ -928,6 +955,24 @@ body {
     .wrapper {
         max-width: 970px;
         padding: 0 15px;
+    }
+
+    .start-questions-container {
+        gap: 8px;
+        margin-bottom: 10px;
+        margin-top: 4px;
+    }
+
+    .buttons-container {
+        gap: 12px;
+        margin-bottom: 10px;
+        margin-top: 4px;
+    }
+
+    .messengers-container {
+        gap: 12px;
+        margin-bottom: 10px;
+        margin-top: 4px;
     }
 
     .hero {
@@ -1038,18 +1083,22 @@ body {
     }
 
     .start-question-btn {
-        font-size: 16px;
-        padding: 16px 20px;
+        font-size: 15px;
+        padding: 12px 14px;
+        border-radius: 14px;
     }
 
     .option-button {
-        font-size: 16px;
-        padding: 16px 20px;
+        border-radius: 14px;
+        font-size: 15px;
+        padding: 12px 10px;
     }
 
     .messenger-button {
-        font-size: 16px;
-        padding: 16px 20px;
+        border-radius: 14px;
+        font-size: 15px;
+        padding: 12px 10px;
+    
     }
 
     .name-input,
@@ -1103,6 +1152,24 @@ body {
     .wrapper {
         padding: 0 20px;
         max-width: 1200px;
+    }
+
+    .start-questions-container {
+        gap: 10px;
+        margin-bottom: 10px;
+        margin-top: 4px;
+    }
+
+    .messengers-container {
+        gap: 10px;
+        margin-bottom: 10px;
+        margin-top: 4px;
+    }
+
+    .buttons-container {
+        gap: 10px;
+        margin-bottom: 10px;
+        margin-top: 4px;
     }
 
     .payment {
@@ -1220,18 +1287,21 @@ body {
     }
 
     .start-question-btn {
-        font-size: 17px;
-        padding: 18px 22px;
+        border-radius: 16px;
+        padding: 10px 16px;
+        font-size: 16px;
     }
 
     .option-button {
-        font-size: 17px;
-        padding: 18px 22px;
+        border-radius: 16px;
+        padding: 12px 14px;
+        font-size: 16px;
     }
 
     .messenger-button {
-        font-size: 17px;
-        padding: 18px 22px;
+        border-radius: 16px;
+        padding: 12px 14px;
+        font-size: 16px;
     }
 
     .name-input,
