@@ -359,7 +359,6 @@ body {
     border-radius: 12px;
     font-size: 12px;
     line-height: 120%;
-    line-height: 1.5;
     word-wrap: break-word;
     overflow-wrap: break-word;
     word-break: break-word;
@@ -699,15 +698,16 @@ body {
 .accepted-content p {
     margin: 0;
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 120%;
 }
 
 
 /* Footer */
 .footer {
     padding: 30px 0;
-    background-color: #31353E;
-    color: #ccc;
+    background-color: #000000;
+    color: #fff;
+    line-height: 120%;
 }
 
 .footer-content {
