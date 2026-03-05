@@ -1185,6 +1185,7 @@ body {
     position: absolute;
     z-index: 10;
     visibility: hidden;
+    justify-content: flex-end;
 
 }
 
