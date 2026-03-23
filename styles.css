@@ -1833,7 +1833,7 @@ body {
         width: 80px;
     }
 
-    .main-logo img {
+    .main-logo svg {
         max-width: 128px;
     }
 
@@ -2186,7 +2186,7 @@ body {
     .main-logo {
         width: 100px;
     }
-    .main-logo img {
+    .main-logo svg {
         max-width: 100px;
         margin-top: 10px;
     }
