@@ -118,7 +118,7 @@ body {
     margin-bottom: 5px;
 }
 
-.main-logo svg {
+.main-logo img {
     display: block;
     width: 100%;
     height: auto;
@@ -1833,7 +1833,7 @@ body {
         width: 80px;
     }
 
-    .main-logo svg {
+    .main-logo img {
         max-width: 128px;
     }
 
@@ -2186,7 +2186,7 @@ body {
     .main-logo {
         width: 100px;
     }
-    .main-logo svg {
+    .main-logo img {
         max-width: 100px;
         margin-top: 10px;
     }
