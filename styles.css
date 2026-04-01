@@ -2184,10 +2184,10 @@ body {
     }
 
     .main-logo {
-        width: 180px;
+        width: 120px;
     }
     .main-logo img {
-        max-width: 180px;
+        max-width: 110px;
         margin-top: 10px;
     }
 
