@@ -976,7 +976,7 @@ body {
     margin: 0 auto;
     border: none;
     border-radius: 999px;
-    background: #BDC467;
+    background: #899f40;
     color: #fff;
     font-family: "Montserrat-Bold", sans-serif;
     font-size: 16px;
@@ -1142,7 +1142,7 @@ body {
 }
 
 .cookie-accept-btn:hover {
-    background-color: #b7baf0;
+    background-color: #c6d39b;
 }
 
 .cookie-accept-btn:active {
@@ -1255,7 +1255,7 @@ body {
     font-family: "Montserrat-Regular", sans-serif;
     line-height: 160%;
     color: #ffffff;
-    background-color: #BDC467;
+    background-color: #899f40;
     margin-bottom: 12px;
     padding: 2px 9px 4px 9px;
     border-radius: 8px;
@@ -2187,7 +2187,7 @@ body {
         width: 120px;
     }
     .main-logo img {
-        max-width: 110px;
+        max-width: 100px;
         margin-top: 10px;
     }
 
