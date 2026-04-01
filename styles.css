@@ -122,7 +122,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
-    max-width: 80px; /* базовый размер на мобилках */
+    max-width: 50px; /* базовый размер на мобилках */
 }
 
 .phone-number {
@@ -173,7 +173,7 @@ body {
 
 .connection-button {
     font-family: "Montserrat-SemiBold", sans-serif;
-    background-color: #5459BB;
+    background-color: #899f40;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -412,7 +412,7 @@ body {
 }
 
 .message-user .message-content {
-    background-color: #5459BB;
+    background-color: #899f40;
     color: white;
     border-bottom-right-radius: 4px;
     font-family: "Montserrat-Medium";
@@ -723,7 +723,7 @@ body {
     text-align: center;
     border: none;
     border-radius: 100px;
-    background: #5459BB;
+    background: #899f40;
     box-shadow: 0px -2px 0px rgba(0, 0, 0, 0.3) inset;
     width: 75%;
     height: 44px;
@@ -965,7 +965,7 @@ body {
 }
 
 .call-modal__input:focus {
-    border-color: #5459BB;
+    border-color: #899f40;
     background: rgba(255, 255, 255, 0.03);
 }
 
@@ -1118,16 +1118,16 @@ body {
 }
 
 .cookie-link {
-    color: #5459BB;
+    color: #899f40;
     text-decoration: underline;
 }
 
 .cookie-link:hover {
-    color: #5459BB;
+    color: #899f40;
 }
 
 .cookie-accept-btn {
-    background-color: #5459BB;
+    background-color: #899f40;
     color: #fff;
     border: none;
     border-radius: 16px;
@@ -1242,13 +1242,13 @@ body {
 .price-range {
     font-family: "Montserrat-Bold", sans-serif;
     font-style: italic;
-    color: #5459BB
+    color: #899f40
 }
 
 .warrant {
     font-family: "Montserrat-Bold", sans-serif;
     font-style: italic;
-    color: #5459BB
+    color: #899f40
 }
 
 .payment {
@@ -1468,11 +1468,11 @@ body {
     }
 
     .main-logo {
-        width: 140px;
+        width: 67px;
     }
 
     .main-logo img {
-        max-width: 140px;
+        max-width: 59px;
     }
     
 
@@ -1830,11 +1830,11 @@ body {
     }
 
     .main-logo {
-        width: 160px;
+        width: 112px;
     }
 
     .main-logo img {
-        max-width: 160px;
+        max-width: 95px;
     }
 
     .payment {
@@ -3012,7 +3012,7 @@ body {
 }
 
 .thanks-title--accent {
-    color: #5459BB;
+    color: #899f40;
 }
 
 .thanks-description {
@@ -3035,7 +3035,7 @@ body {
     line-height: 1;
     color: #fff;
     text-decoration: none;
-    background: #5459BB;
+    background: #899f40;
     transition: filter 0.2s ease, transform 0.1s ease;
 }
 
